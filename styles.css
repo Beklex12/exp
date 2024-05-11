@@ -1,0 +1,153 @@
+/* Global styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: inset 3px 130px 66px -84px rgba(0,0,105,1);
+    -moz-box-shadow: inset 3px 130px 66px -84px rgba(0,0,105,1);
+    box-shadow: inset 3px 130px 66px -84px rgba(0,0,105,1);
+}
+
+/* Circle styles */
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Adjust the size of the circle */
+    height: 300px; /* Adjust the size of the circle */
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0); /* Color */
+    filter: blur(10px); /* Apply blur effect */
+    -webkit-box-shadow: 0px 0px 66px 15px rgba(0,0,105,1);
+    -moz-box-shadow: 0px 0px 66px 15px rgba(0,0,105,1);
+    box-shadow: 0px 0px 66px 15px rgba(0,0,105,1);
+}
+
+/* Color picker container styles */
+.bek {
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+    z-index: 1; /* Ensure it's above other content */
+}
+
+/* Text element styles */
+.middle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center;
+    height: 100%; /* Fill the height of the container */
+}
+
+.left-text, .right-text {
+    font-size: 18px;
+    color: white;
+}
+
+.left-text {
+    position: absolute;
+    left: 5%; /* Adjust left position for space */
+    top: 50%; /* Position at the vertical center */
+    transform: translateY(-50%);
+    font-family: 'Courier New', Courier, monospace;
+    width: 250px;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    transition: width 2s, height 4s;
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Don't wrap text */
+}
+
+.circle2 {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    filter: blur(10px);
+    -webkit-box-shadow: 0px 0px 66px 15px rgba(0,0,105,1);
+    -moz-box-shadow: 0px 0px 66px 15px rgba(0,0,105,1);
+    box-shadow: 0px 0px 66px 15px rgba(0,0,105,1);
+}
+
+#right-typing-text {
+    font-size: 14px;
+    position: absolute;
+    right: 10%; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    #right-typing-text {
+        top: 80%;
+        font-size: 10px;
+    }
+}
+
+
+.additional-text {
+    display: none; /* Initially hide additional text */
+}
+
+.right-text:hover .additional-text {
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Don't wrap text */
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+    margin-top: 20px; /* Add space between the typing text and other texts */
+    display: block; /* Display additional text on hover */
+}
+
+#typing-text {
+    font-size: 24px;
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Don't wrap text */
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+    margin-top: 20px; /* Add space between the typing text and other texts */
+}
+
+@media screen and (max-width: 768px) {
+    .left-text, .right-text {
+        top: 80%;
+        font-size: 10px; /* Reduce font size for smaller screens */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .circle2 {
+        top: 80%;
+        font-size: 15px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .left-text {
+        top: 80%;
+        font-size: 15px;
+        width: 100px;
+    }
+}
+.linky{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Don't wrap text */
+    color: azure;
+    text-decoration: none;
+}
