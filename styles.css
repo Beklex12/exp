@@ -83,17 +83,19 @@ body {
 }
 
 #right-typing-text {
-    font-size: 14px;
+    font-size: 15px;
     position: absolute;
-    right: 10%; /* Adjust as needed */
+    right: 11%; /* Adjust as needed */
     top: 50%;
     transform: translateY(-50%);
     color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
 @media screen and (max-width: 768px) {
     #right-typing-text {
         top: 80%;
         font-size: 10px;
+        right: 8%;
     }
 }
 
@@ -118,6 +120,12 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: azure;
     margin-top: 20px; /* Add space between the typing text and other texts */
+}
+@media screen and (max-width: 768px) {
+    #typing-text {
+        top: 50%;
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
