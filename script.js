@@ -51,4 +51,6 @@ window.onload = function() {
 
     // Typing effect for right circle
     typeText("right-typing-text", "just an experiment");
+
+    typeText("left-typing-text", "just an experiment");
 };
