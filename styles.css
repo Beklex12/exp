@@ -368,3 +368,280 @@ body {
     }
 }
   /* Animation for sliding down */
+.tline{
+    position: absolute;
+    top: 20px; /* Adjust distance from top */
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+}
+.Bik{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 10%;
+    color: rgb(166, 166, 166);
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.restart{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 10%;
+    color: rgb(166, 166, 166);
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.inst{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 10%;
+    color: rgb(166, 166, 166);
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+    .inst, .Bik, .restart {
+      margin: 0 5%;  
+      
+       
+    }
+}
+/* Style the container */
+.container {
+    position: absolute;
+    top: 20px; /* Adjust distance from top */
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Style the hello links */
+.hello a {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px; /* Adjust space between links */
+    text-decoration: none;
+    color: black; /* Set link color */
+}
+
+/* Style the hover effect */
+.hello a:hover {
+    text-decoration: underline;
+}
+@font-face {
+    font-family: Clip;
+    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+  }
+  
+  
+  .sign {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-image: radial-gradient(
+      ellipse 50% 35% at 50% 50%,
+      #000000,
+      transparent
+    );
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 50%;
+    font-family: "Clip";
+    text-transform: uppercase;
+    font-size: 6em;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #0808a2,
+      -0.2rem 0.1rem 1rem #0808a2, 0.2rem 0.1rem 1rem #0808a2,
+      0 -0.5rem 2rem #0b41cb, 0 0.5rem 3rem #0b41cb;
+    animation: shine 2s forwards, flicker 3s infinite;
+  }
+  @media screen and (max-width: 768px) {
+    .sign {
+      font-size: 5em;  
+      
+    }
+    }
+  @keyframes blink {
+    0%,
+    22%,
+    33%,
+    45%,
+    55%,
+    75% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #7465ff,
+        -0.2rem 0.1rem 1rem #0b41cb, 0.2rem 0.1rem 1rem #0b41cb,
+        0 -0.5rem 2rem #0b41cb, 0 0.5rem 3rem #0b41cb;
+    }
+    28%,
+    33% {
+      color: #0b41cb;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #0b41cb;
+      text-shadow: none;
+    }
+  }
+  
+  .flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+  
+  .fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      color: #000000;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #7465ff,
+      -0.2rem 0.1rem 1rem #0b41cb, 0.2rem 0.1rem 1rem #0b41cb,
+      0 -0.5rem 2rem #0b41cb, 0 0.5rem 3rem #0b41cb;
+    }
+  }
+  
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: 0.9;
+    }
+  
+    6% {
+      opacity: 0.85;
+    }
+  
+    8% {
+      opacity: 0.95;
+    }
+  
+    10% {
+      opacity: 0.9;
+    }
+  
+    11% {
+      opacity: 0.922;
+    }
+  
+    12% {
+      opacity: 0.9;
+    }
+  
+    14% {
+      opacity: 0.95;
+    }
+  
+    16% {
+      opacity: 0.98;
+    }
+  
+    17% {
+      opacity: 0.9;
+    }
+  
+    19% {
+      opacity: 0.93;
+    }
+  
+    20% {
+      opacity: 0.99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: 0.94;
+    }
+  
+    28% {
+      opacity: 0.98;
+    }
+  
+    37% {
+      opacity: 0.93;
+    }
+  
+    38% {
+      opacity: 0.5;
+    }
+  
+    39% {
+      opacity: 0.96;
+    }
+  
+    42% {
+      opacity: 1;
+    }
+  
+    44% {
+      opacity: 0.97;
+    }
+  
+    46% {
+      opacity: 0.94;
+    }
+  
+    56% {
+      opacity: 0.9;
+    }
+  
+    58% {
+      opacity: 0.9;
+    }
+  
+    60% {
+      opacity: 0.99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.9;
+    }
+  
+    72% {
+      opacity: 0.95;
+    }
+  
+    93% {
+      opacity: 0.93;
+    }
+  
+    95% {
+      opacity: 0.95;
+    }
+  
+    97% {
+      opacity: 0.93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  /* Initially hide the sign */
+
