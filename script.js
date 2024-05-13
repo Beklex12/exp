@@ -54,3 +54,12 @@ window.onload = function() {
 
     typeText("left-typing-text", "just an experiment");
 };
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the sign element
+    const sign = document.querySelector(".sign");
+    
+    // Add the 'appear' class to show the sign slowly after 3 seconds
+    setTimeout(function() {
+        sign.classList.add("appear");
+    }, 3000); // 3 seconds delay
+});
