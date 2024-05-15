@@ -50,9 +50,9 @@ window.onload = function() {
     typeText("typing-text", "Something that really matters... ");
 
     // Typing effect for right circle
-    typeText("right-typing-text", "just an experiment");
+    typeText("right-typing-text", "The princess of pretiness");
 
-    typeText("left-typing-text", "just an experiment");
+    typeText("left-typing-text", "Karina Golovkova");
 };
 document.addEventListener("DOMContentLoaded", function() {
     // Get the sign element
