@@ -46,7 +46,7 @@ body {
     flex-direction: column;
     justify-content: center; /* Center vertically */
     align-items: center;
-    height: 100%; /* Fill the height of the container */
+    height: 25%; /* Fill the height of the container */
 }
 
 .left-text, .right-text {
@@ -235,7 +235,7 @@ body {
 #right-typing-text {
     font-size: 15px;
     position: absolute;
-    right: 11%; /* Adjust as needed */
+    right: 9%; /* Adjust as needed */
     top: 50%;
     transform: translateY(-50%);
     color: white;
@@ -245,7 +245,7 @@ body {
     #right-typing-text {
         top: 80%;
         font-size: 10px;
-        right: 8%;
+        right: 5%;
     }
 }
 
